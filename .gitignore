@@ -1,0 +1,79 @@
+# ============================================================================
+#  Sign-Language Landmark Pipeline — .gitignore
+#  Commit the CODE, LOGIC, PIPELINE and DOCS.
+#  Ignore large / regenerable DATA and VIDEO (re-create by running the scripts).
+# ============================================================================
+
+# ── Raw source videos (large binaries — back these up separately, NOT in git) ──
+dataset/
+excluded_clips/
+
+# ── Everything the pipeline generates (regenerate with the scripts) ──
+#    extract_dataset.py -> processed_dataset/
+#    observe_video.py   -> observation/
+processed_dataset/
+observation/
+
+# ── Training pipeline outputs (regenerate: train.py / finetune.py / export) ──
+#    checkpoints, exported ONNX, metrics, predictions, caches, live temp, logs
+
+
+# ── Standalone / output video files anywhere (skeletons, overlays, samples) ──
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.m4v
+*.wmv
+*.webm
+
+# ── Bulk landmark arrays, if ever produced outside the ignored folders ──
+*.npy
+*.npz
+
+# ── Trained model weights (regenerable; back up separately, NOT in git) ──
+*.pt
+*.pth
+*.onnx
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── Virtual environments ──
+.venv/
+venv/
+env/
+ENV/
+
+# ── Editors / OS cruft ──
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ── Logs / scratch ──
+*.log
+scratchpad/
+tmp/
+
+# ── Claude Code local-only settings (keep shared .claude/settings.json) ──
+.claude/settings.local.json
+
+# ============================================================================
+#  KEPT IN GIT (for reference — these are NOT ignored):
+#    *.py                          all pipeline + training code
+#    docs/*.md  docs/diagrams/*.png  docs/*.py  docs/TECHNICAL_DOCUMENTATION.pdf
+#    training/docs/*.md  training/docs/diagrams/*.png  training/docs/*.py
+#    training/docs/TRAINING_DOCUMENTATION.pdf
+#    .gitignore
+# ============================================================================

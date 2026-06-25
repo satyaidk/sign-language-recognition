@@ -1,0 +1,39 @@
+{
+  "stem": "good_03",
+  "true_label": "good",
+  "prediction": "good",
+  "conf": 0.9590556025505066,
+  "topk": [
+    [
+      "good",
+      0.9590556025505066
+    ],
+    [
+      "how_are_you",
+      0.007387861143797636
+    ],
+    [
+      "help",
+      0.005321720615029335
+    ]
+  ],
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 48,
+      "start_s": 0.0,
+      "end_s": 1.6,
+      "sign": "good",
+      "conf": 0.959
+    },
+    {
+      "start_frame": 2,
+      "end_frame": 50,
+      "start_s": 0.07,
+      "end_s": 1.67,
+      "sign": "good",
+      "conf": 0.96
+    }
+  ],
+  "correct": true
+}
