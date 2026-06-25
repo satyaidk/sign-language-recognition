@@ -1,0 +1,14 @@
+{
+  "good": 0,
+  "hello": 1,
+  "help": 2,
+  "hi": 3,
+  "how_are_you": 4,
+  "me": 5,
+  "nice_to_meet_you": 6,
+  "no": 7,
+  "sorry": 8,
+  "thank_you": 9,
+  "yes": 10,
+  "you": 11
+}

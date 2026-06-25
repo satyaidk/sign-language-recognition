@@ -11,7 +11,7 @@ excluded_clips/
 # ── Everything the pipeline generates (regenerate with the scripts) ──
 #    extract_dataset.py -> processed_dataset/
 #    observe_video.py   -> observation/
-processed_dataset/
+
 observation/
 
 # ── Training pipeline outputs (regenerate: train.py / finetune.py / export) ──

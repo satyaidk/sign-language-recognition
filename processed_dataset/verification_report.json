@@ -1,0 +1,1892 @@
+{
+  "verdicts": {
+    "PASS": 134,
+    "WARN": 0,
+    "FAIL": 0
+  },
+  "n_clips": 134,
+  "clips": [
+    {
+      "class": "good",
+      "stem": "good",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 1.0,
+        "right_hand": 1.0
+      },
+      "T": 58,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.986,
+        "left_hand": 0.838,
+        "right_hand": 0.986
+      },
+      "T": 74,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.833,
+        "right_hand": 0.905
+      },
+      "T": 84,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.76,
+        "right_hand": 0.78
+      },
+      "T": 50,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.351,
+        "right_hand": 0.509
+      },
+      "T": 57,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.16,
+        "left_hand": 0.29,
+        "right_hand": 0.36
+      },
+      "T": 100,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.372,
+        "right_hand": 0.415
+      },
+      "T": 94,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.971,
+        "face": 0.971,
+        "left_hand": 0.941,
+        "right_hand": 0.941
+      },
+      "T": 34,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 1.0,
+        "right_hand": 1.0
+      },
+      "T": 52,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.987,
+        "left_hand": 0.872,
+        "right_hand": 0.987
+      },
+      "T": 78,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "good",
+      "stem": "good_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.82,
+        "right_hand": 0.91
+      },
+      "T": 89,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.938,
+        "face": 0.938,
+        "left_hand": 0.0,
+        "right_hand": 0.462
+      },
+      "T": 65,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 86,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 60,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.983,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 60,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.86
+      },
+      "T": 43,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.059,
+        "right_hand": 0.794
+      },
+      "T": 34,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.943
+      },
+      "T": 35,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 55,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.984,
+        "left_hand": 0.016,
+        "right_hand": 0.984
+      },
+      "T": 62,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.982,
+        "left_hand": 0.035,
+        "right_hand": 0.982
+      },
+      "T": 57,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hello",
+      "stem": "hello_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.907
+      },
+      "T": 43,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.867,
+        "right_hand": 0.969
+      },
+      "T": 98,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.982,
+        "left_hand": 0.464,
+        "right_hand": 0.768
+      },
+      "T": 56,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.952,
+        "right_hand": 1.0
+      },
+      "T": 42,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 1.0,
+        "right_hand": 0.973
+      },
+      "T": 74,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.583,
+        "right_hand": 0.833
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.403,
+        "right_hand": 0.486
+      },
+      "T": 72,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.75,
+        "right_hand": 0.839
+      },
+      "T": 56,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.987,
+        "right_hand": 0.987
+      },
+      "T": 76,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.816,
+        "right_hand": 0.934
+      },
+      "T": 76,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "help",
+      "stem": "help_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.4,
+        "right_hand": 0.6
+      },
+      "T": 70,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.542,
+        "left_hand": 0.0,
+        "right_hand": 0.508
+      },
+      "T": 59,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.029,
+        "right_hand": 0.886
+      },
+      "T": 35,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.042,
+        "right_hand": 0.792
+      },
+      "T": 72,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.02,
+        "right_hand": 0.52
+      },
+      "T": 50,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.676
+      },
+      "T": 71,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.676
+      },
+      "T": 71,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.042,
+        "right_hand": 0.792
+      },
+      "T": 72,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.02,
+        "right_hand": 0.52
+      },
+      "T": 50,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "hi",
+      "stem": "hi_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.542,
+        "left_hand": 0.0,
+        "right_hand": 0.508
+      },
+      "T": 59,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "how_are_you",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.738,
+        "left_hand": 0.35,
+        "right_hand": 0.487
+      },
+      "T": 80,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 1.0,
+        "right_hand": 0.917
+      },
+      "T": 60,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 1.0,
+        "right_hand": 0.692
+      },
+      "T": 120,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.747,
+        "right_hand": 1.0
+      },
+      "T": 178,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.974,
+        "right_hand": 1.0
+      },
+      "T": 39,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.0,
+        "left_hand": 0.941,
+        "right_hand": 1.0
+      },
+      "T": 51,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.892,
+        "left_hand": 0.382,
+        "right_hand": 0.98
+      },
+      "T": 102,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.992,
+        "left_hand": 0.392,
+        "right_hand": 0.808
+      },
+      "T": 125,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.403,
+        "right_hand": 0.836
+      },
+      "T": 67,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.407,
+        "right_hand": 1.0
+      },
+      "T": 81,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.603,
+        "right_hand": 1.0
+      },
+      "T": 121,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.5,
+        "right_hand": 1.0
+      },
+      "T": 50,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "how_are_you",
+      "stem": "howareyou_11",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.294,
+        "right_hand": 0.985
+      },
+      "T": 68,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.543
+      },
+      "T": 46,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.905
+      },
+      "T": 63,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 59,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.976,
+        "left_hand": 0.0,
+        "right_hand": 0.817
+      },
+      "T": 82,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.954
+      },
+      "T": 65,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.59
+      },
+      "T": 61,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.762
+      },
+      "T": 42,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.018,
+        "right_hand": 0.877
+      },
+      "T": 57,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.013,
+        "right_hand": 0.987
+      },
+      "T": 76,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "me",
+      "stem": "me_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.985,
+        "left_hand": 0.0,
+        "right_hand": 0.862
+      },
+      "T": 65,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.991,
+        "left_hand": 0.265,
+        "right_hand": 0.85
+      },
+      "T": 113,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.864,
+        "left_hand": 0.514,
+        "right_hand": 0.99
+      },
+      "T": 286,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.988,
+        "left_hand": 0.318,
+        "right_hand": 0.835
+      },
+      "T": 85,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 1.0,
+        "right_hand": 0.508
+      },
+      "T": 128,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.853,
+        "left_hand": 0.733,
+        "right_hand": 0.88
+      },
+      "T": 75,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.582,
+        "right_hand": 0.735
+      },
+      "T": 98,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.411,
+        "right_hand": 0.774
+      },
+      "T": 124,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.597,
+        "right_hand": 0.776
+      },
+      "T": 67,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.43,
+        "right_hand": 0.895
+      },
+      "T": 86,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.994,
+        "left_hand": 0.36,
+        "right_hand": 0.806
+      },
+      "T": 175,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "nice_to_meet_you",
+      "stem": "nicetomeetyou_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.982,
+        "left_hand": 0.464,
+        "right_hand": 0.946
+      },
+      "T": 56,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.868
+      },
+      "T": 53,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 47,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.991,
+        "face": 0.102,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 108,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.969,
+        "face": 0.969,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 32,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.872
+      },
+      "T": 47,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 52,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.104,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 106,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.967,
+        "face": 0.967,
+        "left_hand": 0.0,
+        "right_hand": 0.867
+      },
+      "T": 60,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.863
+      },
+      "T": 51,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.991,
+        "face": 0.102,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 108,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_11",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.982,
+        "left_hand": 0.0,
+        "right_hand": 0.927
+      },
+      "T": 55,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "no",
+      "stem": "no_12",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.716,
+        "face": 0.716,
+        "left_hand": 0.018,
+        "right_hand": 0.413
+      },
+      "T": 109,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 53,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 46,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.873,
+        "left_hand": 0.029,
+        "right_hand": 0.716
+      },
+      "T": 102,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 59,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.013,
+        "right_hand": 0.533
+      },
+      "T": 75,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.759,
+        "face": 0.013,
+        "left_hand": 0.025,
+        "right_hand": 0.633
+      },
+      "T": 79,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 40,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 129,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.982
+      },
+      "T": 57,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "sorry",
+      "stem": "sorry_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.7
+      },
+      "T": 70,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.93,
+        "face": 0.907,
+        "left_hand": 0.0,
+        "right_hand": 0.907
+      },
+      "T": 43,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 56,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 103,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.854,
+        "left_hand": 0.062,
+        "right_hand": 0.812
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 97,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 60,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.921
+      },
+      "T": 63,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 50,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 66,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "thank_you",
+      "stem": "thankyou_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.979,
+        "left_hand": 0.0,
+        "right_hand": 0.875
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes",
+      "issues": [],
+      "detection_rate": {
+        "pose": 0.97,
+        "face": 0.97,
+        "left_hand": 0.0,
+        "right_hand": 0.95
+      },
+      "T": 100,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.99,
+        "left_hand": 0.031,
+        "right_hand": 0.865
+      },
+      "T": 96,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.754
+      },
+      "T": 57,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.034,
+        "right_hand": 1.0
+      },
+      "T": 29,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.023,
+        "right_hand": 0.977
+      },
+      "T": 43,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.98,
+        "left_hand": 0.02,
+        "right_hand": 0.861
+      },
+      "T": 101,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 14,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.026,
+        "right_hand": 1.0
+      },
+      "T": 39,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.043,
+        "right_hand": 0.978
+      },
+      "T": 46,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.99,
+        "left_hand": 0.04,
+        "right_hand": 0.871
+      },
+      "T": 101,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.978,
+        "left_hand": 0.022,
+        "right_hand": 0.957
+      },
+      "T": 46,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "yes",
+      "stem": "yes_11",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.541
+      },
+      "T": 74,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.029,
+        "right_hand": 1.0
+      },
+      "T": 34,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_01",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.57
+      },
+      "T": 79,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_02",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.93
+      },
+      "T": 43,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_03",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.018,
+        "right_hand": 0.965
+      },
+      "T": 57,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_04",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.991,
+        "left_hand": 0.0,
+        "right_hand": 0.973
+      },
+      "T": 110,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_05",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 0.98,
+        "left_hand": 0.02,
+        "right_hand": 0.882
+      },
+      "T": 51,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_06",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.016,
+        "right_hand": 0.828
+      },
+      "T": 64,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_07",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.018,
+        "right_hand": 0.911
+      },
+      "T": 56,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_08",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.944
+      },
+      "T": 54,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_09",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 0.958
+      },
+      "T": 48,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_10",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.0,
+        "right_hand": 1.0
+      },
+      "T": 78,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "class": "you",
+      "stem": "you_11",
+      "issues": [],
+      "detection_rate": {
+        "pose": 1.0,
+        "face": 1.0,
+        "left_hand": 0.038,
+        "right_hand": 0.83
+      },
+      "T": 53,
+      "all_vs_parts_max_diff": 0.0,
+      "verdict": "PASS"
+    }
+  ],
+  "mean_detection_rate": {
+    "pose": 0.994,
+    "face": 0.938,
+    "left_hand": 0.222,
+    "right_hand": 0.861
+  }
+}

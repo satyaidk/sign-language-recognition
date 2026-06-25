@@ -1,0 +1,34 @@
+{
+  "total_features": 1692,
+  "blocks": [
+    {
+      "name": "pose",
+      "start": 0,
+      "end": 132,
+      "width": 132,
+      "desc": "33 pose landmarks x (x,y,z,visibility)"
+    },
+    {
+      "name": "face",
+      "start": 132,
+      "end": 1566,
+      "width": 1434,
+      "desc": "478 face-mesh landmarks x (x,y,z)"
+    },
+    {
+      "name": "left_hand",
+      "start": 1566,
+      "end": 1629,
+      "width": 63,
+      "desc": "21 left-hand landmarks x (x,y,z)"
+    },
+    {
+      "name": "right_hand",
+      "start": 1629,
+      "end": 1692,
+      "width": 63,
+      "desc": "21 right-hand landmarks x (x,y,z)"
+    }
+  ],
+  "note": "Column layout of landmarks_all/*.npy (T, total_features). Normalised image coords: x,y in [0,1], z relative depth."
+}
