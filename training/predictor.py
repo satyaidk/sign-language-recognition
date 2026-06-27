@@ -76,16 +76,45 @@ class SignPredictor:
         with self.torch.no_grad():
             return self.model(self.torch.from_numpy(x)).numpy()[0]
 
-    def predict_features(self, feats, topk=3):
-        probs = softmax(self._logits(feats))
+    def _probs(self, feats):
+        return softmax(self._logits(feats))
+
+    def _result(self, probs, topk):
         order = np.argsort(probs)[::-1]
-        idx = int(order[0])
-        return {"label": idx, "name": self.classes[idx], "conf": float(probs[idx]),
-                "probs": probs,
+        i0 = int(order[0])
+        i1 = int(order[1]) if probs.shape[0] > 1 else i0
+        return {"label": i0, "name": self.classes[i0], "conf": float(probs[i0]),
+                "margin": float(probs[i0] - probs[i1]), "probs": probs,
                 "topk": [(self.classes[int(i)], float(probs[int(i)])) for i in order[:topk]]}
+
+    def predict_features(self, feats, topk=3):
+        return self._result(self._probs(feats), topk)
 
     def predict(self, raw_all_vec, topk=3):
         return self.predict_features(self.features(raw_all_vec), topk=topk)
+
+    def predict_robust(self, raw_all_vec, window=48, stride=12, topk=3):
+        """Whole-clip prediction averaged with sliding-window votes.
+
+        A single whole-clip pass can be tipped between two look-alike signs
+        (e.g. good/help) by a few ambiguous frames.  Averaging the softmax over
+        the whole clip PLUS overlapping sub-windows is a cheap ensemble that
+        stabilises the winner and yields a meaningful top1-top2 `margin`, which
+        the live loop uses to refuse to commit on a near-tie.
+        """
+        raw = np.asarray(raw_all_vec, np.float32)
+        T = int(raw.shape[0])
+        probs = [self._probs(self.features(raw))]
+        if T > window:
+            starts = list(range(0, T - window + 1, max(1, stride)))
+            if starts[-1] != T - window:
+                starts.append(T - window)
+            for a in starts:
+                probs.append(self._probs(self.features(raw[a:a + window])))
+        mean = np.mean(np.stack(probs, axis=0), axis=0)
+        out = self._result(mean, topk)
+        out["n_windows"] = len(probs)
+        return out
 
 
 # ── Video -> raw (T, 1692) using the project's own extractor ──────────────────

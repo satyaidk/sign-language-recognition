@@ -15,7 +15,7 @@ processed_dataset/landmarks_all/<class>/<stem>.npy   (T, 1692)
    │ STAGE 2 finetune.py full fit+EMA -> model_final.pt     │
    │ STAGE 3 export      ONNX + int8  -> sign_model.onnx    │
    │ STAGE 4 infer_video file + overlay                     │
-   │ STAGE 5 infer_live  webcam chunks                      │
+   │ STAGE 5 infer_live  motion-gated live segments         │
    └───────────────────────────────────────────────────────┘
 ```
 
@@ -128,14 +128,24 @@ result in memory; each epoch only pays for augment + assemble.
 
 ## Stage 5 — `infer_live.py` (live translation)
 
-The requested **record → process → delete** loop:
-1. Record a few seconds of webcam (`--seconds`, default 2.5) to a **temp file**
-   under `live_tmp/`.
-2. Run the **same** `video_to_clip` + predictor on that recording.
-3. Show the recognised sign as a subtitle; emit it only if confidence ≥ `--conf`
-   **and** hands were actually seen (>15% of frames).
-4. **Delete** the temp file (it is a cache file). Repeat continuously.
-5. `--source <video>` simulates the live loop from a file (testable without a
+The **record → process → delete** loop, now **motion-gated** so a recording is
+exactly as long as the sign instead of a fixed clock window (see `segmenter.py`
+and `docs/LIVE_FIX.md` for the full reasoning):
+
+1. `segmenter.MotionSegmenter` watches a cheap per-frame motion signal and
+   **opens** a recording when the hands start moving, **closes** it when the
+   signer is still for `--still` seconds (gaps between signs become an explicit
+   LISTENING state, never classified).
+2. The closed segment is written to a **temp file** under `live_tmp/` and run
+   through the **same** `video_to_clip` + predictor as offline.
+3. `predictor.predict_robust()` averages the whole-clip softmax with sliding
+   sub-window votes; the sign is emitted only if confidence ≥ `--conf`, the
+   **top1–top2 margin** ≥ `--margin` (rejects look-alike ties), and hands were
+   actually seen (>15% of frames).
+4. `segmenter.SignDebouncer` suppresses an immediately-repeated sign within
+   `--repeat-window` seconds, so "no, no, no" reads as one **no**.
+5. **Delete** the temp file (it is a cache file). Repeat continuously.
+6. `--source <video>` simulates the loop from a file (testable without a
    camera); a transcript is saved to `predictions/live_transcript.json`.
 
 Using a temp file (not a pure in-memory buffer) is deliberate: it reuses the

@@ -26,6 +26,11 @@ Read in order, or jump to what you need.
 Diagrams live in [`diagrams/`](diagrams). The combined PDF is
 `TRAINING_DOCUMENTATION.pdf` (regenerate with `python training/docs/build_pdf.py`).
 
+A focused write-up of the **live-translation fix** (motion-gated recording,
+margin gating, de-duplication) is in [`LIVE_FIX.md`](LIVE_FIX.md) →
+`LIVE_SEGMENTATION_FIX.pdf` (regenerate with
+`python training/docs/build_live_fix_pdf.py`).
+
 ## Regenerating the docs assets
 ```
 python training/docs/make_diagrams.py   # rebuild architecture / feature / stages diagrams

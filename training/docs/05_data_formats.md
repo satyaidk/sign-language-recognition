@@ -106,8 +106,8 @@ Inference rebuilds the entire feature pipeline from this file alone.
 
 ## Transient
 
-- `live_tmp/chunk_*.mp4` — recorded webcam chunks, **deleted immediately** after
-  each chunk is processed (a safety net also clears leftovers on exit).
+- `live_tmp/seg_*.mp4` — one recorded **motion-gated sign segment**, **deleted
+  immediately** after it is processed (a safety net also clears leftovers on exit).
 - `cache/` — feature cache scratch space.
 
 All of `training/artifacts/` is gitignored and regenerable by re-running the

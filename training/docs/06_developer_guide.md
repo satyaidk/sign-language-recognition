@@ -46,8 +46,9 @@ python training/infer_video.py --video hello/hello --backend torch --no-overlay
 python training/infer_video.py --path "C:/clips/test.mp4"
 python training/infer_video.py --scan-dataset --limit 3   # batch sanity check
 
-# Live (or simulate from a file without a camera)
-python training/infer_live.py --seconds 2.0 --proc-width 480 --int8
+# Live (motion-gated; or simulate from a file without a camera)
+python training/infer_live.py --proc-width 480 --int8
+python training/infer_live.py --margin 0.2 --still 0.6      # stricter / longer end-of-sign
 python training/infer_live.py --source good.mp4 --no-display
 
 # Module self-tests (quick smoke checks)
@@ -55,6 +56,7 @@ python training/features.py        # feature spec + a sample clip + flip involut
 python training/data.py            # dataset load + per-class counts
 python training/model.py           # param count + forward shape
 python training/predictor.py       # load model + predict one sample
+python training/segmenter.py       # motion state-machine + de-dup self-test (no camera)
 ```
 
 ## Common tasks
@@ -88,9 +90,11 @@ checkpoint automatically.
 | `model_final.pt not found` (export) | Run `finetune.py` first. |
 | ONNX export `MISMATCH` | A non-exportable op crept in; the legacy exporter handles GRU/Transformer — check custom layers. |
 | int8 "quantization skipped" | `onnxruntime.quantization` missing/incompatible; use the fp32 ONNX or `--no-quant`. |
-| Live always says "..." | Confidence below `--conf`, or hands not seen (>15% needed). Improve lighting/framing or lower `--conf`. |
+| Live always says "?" | Below `--conf`, a look-alike tie below `--margin`, or hands not seen (>15% needed). Lower `--conf`/`--margin` or improve framing. |
+| Live never starts recording | Motion below the start threshold. Lower `--motion-start` or `--floor`; check the printed `start>` value. |
+| Live cuts a sign off early | Raise `--still` (longer stillness to end) or lower `--motion-stop`. |
 | Low CV accuracy on one class | Inspect `confusion_matrix.png` — confusable signs share hand shape; collect more clips or enable face. |
-| Slow live loop | Lower `--proc-width` (e.g. 320) and/or use `--int8`; shorten `--seconds`. |
+| Slow live loop | Lower `--proc-width` (e.g. 320) and/or use `--int8`; lower `--max-sign`. |
 | `UnicodeEncodeError` on Windows | Handled — `utils._enable_utf8_console()` runs on import. |
 
 ### Inspect a model meta / features by hand
