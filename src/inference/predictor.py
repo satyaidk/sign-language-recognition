@@ -123,7 +123,7 @@ def video_to_clip(video_path, proc_width=0):
     """Run the SAME detection/extraction the dataset was built with.
     Returns {'raw','arrays','masks','fps','T'} or None if the video won't open."""
     from types import SimpleNamespace
-    sys.path.insert(0, str(PROJECT_ROOT / "pipeline"))
+    sys.path.insert(0, str(_SRC / "dataprep"))
     import extract_dataset as ed
     # face=True so the (T,1692) layout matches training even though the model
     # ignores the face block — features.to_features slices by fixed offsets.
