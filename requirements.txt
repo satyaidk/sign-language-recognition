@@ -1,0 +1,10 @@
+# Runtime dependencies for the full pipeline (Python 3.11 recommended).
+#   dataprep  : mediapipe, opencv-python, numpy
+#   training  : torch, matplotlib (metrics plots)
+#   inference : onnxruntime (exported model), opencv-python
+mediapipe
+opencv-python
+numpy
+torch
+matplotlib
+onnxruntime

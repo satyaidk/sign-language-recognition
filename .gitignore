@@ -5,17 +5,20 @@
 # ============================================================================
 
 # ── Raw source videos (large binaries — back these up separately, NOT in git) ──
-dataset/
-excluded_clips/
+data/dataset/
+data/excluded_clips/
+data/samples/
 
 # ── Everything the pipeline generates (regenerate with the scripts) ──
-#    extract_dataset.py -> processed_dataset/
-#    observe_video.py   -> observation/
+#    src/dataprep/extract_dataset.py -> data/processed_dataset/  (kept, minus videos/arrays)
+#    src/dataprep/observe_video.py   -> data/observation/
 
-observation/
+data/observation/
 
 # ── Training pipeline outputs (regenerate: train.py / finetune.py / export) ──
-#    checkpoints, exported ONNX, metrics, predictions, caches, live temp, logs
+#    artifacts/: checkpoints, exported ONNX, metrics, predictions, caches, live temp, logs
+#    (weights/logs are caught by the *.pt / *.onnx / *.log patterns below;
+#     small JSON/PNG summaries stay in git)
 
 
 # ── Standalone / output video files anywhere (skeletons, overlays, samples) ──
@@ -71,9 +74,9 @@ tmp/
 
 # ============================================================================
 #  KEPT IN GIT (for reference — these are NOT ignored):
-#    *.py                          all pipeline + training code (incl. segmenter.py)
-#    docs/*.md  docs/diagrams/*.png  docs/*.py  docs/TECHNICAL_DOCUMENTATION.pdf
-#    training/docs/*.md  training/docs/diagrams/*.png  training/docs/*.py
-#    training/docs/TRAINING_DOCUMENTATION.pdf  training/docs/LIVE_SEGMENTATION_FIX.pdf
-#    .gitignore
+#    src/**/*.py                   all dataprep + training + inference code
+#    data/processed_dataset/       landmark metadata, manifests, reports (no videos/arrays)
+#    artifacts/                    small JSON/PNG summaries (no weights)
+#    docs/dataprep/  docs/training/   *.md, diagrams/*.png, build scripts, PDFs
+#    requirements.txt  requirements-dev.txt  .gitignore
 # ============================================================================

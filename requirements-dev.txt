@@ -1,0 +1,4 @@
+# Extra dependencies only needed to rebuild the documentation PDFs/diagrams:
+#   docs/dataprep/build_pdf.py, docs/training/build_pdf.py, make_diagrams.py
+-r requirements.txt
+reportlab
