@@ -141,7 +141,7 @@ sized to the sequence length) is available for larger datasets.
   `onnxscript` and has open GRU issues. PyTorch ≥ 2.9 warns about the legacy
   exporter, and export silences that expected warning.
 - **Parity check:** ONNX Runtime vs PyTorch on random inputs (batch 1 and 3) and a
-  real clip. Export fails if the max logit difference is ≥ 1e-3 (typically ~1e-6).
+  real clip. Export fails if the max logit difference is ≥ 1e-3 (typically ≈1e-6).
 - **Int8:** dynamic quantisation is tried and kept only if it agrees with fp32.
   ONNX Runtime does not quantise GRU layers, so for this model the int8 file is
   only a few percent smaller. The number is measured and reported, not assumed.

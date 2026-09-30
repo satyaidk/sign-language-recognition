@@ -39,7 +39,7 @@ before the fix. Several tests are named after the bug they pin down.
 
 ## Common tasks
 
-**Add a sign:** record ~10+ clips into `dataset/<new_sign>/`, then run
+**Add a sign:** record ≈10+ clips into `dataset/<new_sign>/`, then run
 `extract --classes <new_sign>`. The new class gets the next label and existing labels
 never change. Then `verify`, `train`, `finetune`, `export`.
 
