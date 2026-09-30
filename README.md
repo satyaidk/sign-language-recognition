@@ -1,6 +1,6 @@
 <div align="center">
 
-# SignLang
+# Sign Language Recognizer
 
 ### Real-time sign language recognition from body landmarks
 
