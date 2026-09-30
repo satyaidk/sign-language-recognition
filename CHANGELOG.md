@@ -32,15 +32,15 @@ design are unchanged, except where a change is listed below.
 - **Verification crashed** (instead of reporting FAIL) when a clip's modality files had different frame counts.
 - **Feature transform crashed** on an empty (0-frame) clip.
 - **Live mode froze** after every sign (temp MP4 + three new MediaPipe models + re-extraction on the
-  capture thread, ~2.5 s for a 2 s sign). It now streams landmarks with persistent models, so only the
-  model runs when a sign ends (~2 ms).
+  capture thread, ≈2.5 s for a 2 s sign). It now streams landmarks with persistent models, so only the
+  model runs when a sign ends (≈2 ms).
 - **Live mode reported the wrong abstain reason** ("tie" whenever confidence ≥ 0.5). It now reports
   `no-hands`, `low-conf` or `tie` correctly.
 - **Live file simulation wasn't reproducible:** de-duplication used the wall clock. It now uses video time.
 - **Whole-clip fallback bypassed the hands gate** (hard-coded `hands_rate = 1.0`).
 - **File inference didn't save its JSON** with `--no-overlay`.
 - **Transformer option wasted parameters:** a fixed 4096-row positional table (524k of 836k parameters).
-  It's now sized to the sequence length (~320k parameters total).
+  It's now sized to the sequence length (≈320k parameters total).
 - **Unbalanced CV folds:** every class started filling fold 0 (e.g. 36 vs 24 clips). Folds are now balanced.
 - **Observation crashed** with `--no-face/--no-hands/--no-pose` (charts assumed every modality) and defaulted to a hard-coded `asl.mp4`.
 - Unknown `pool`/`arch` values silently fell back to a default; they now raise.
@@ -51,7 +51,7 @@ design are unchanged, except where a change is listed below.
   the model doesn't use it; per-session diagnostic logs (`predictions/sessions/<time>.json`).
 - Clear error when MediaPipe is missing or too new for the legacy solutions API.
 - Export refuses to write a model that fails the ONNX/PyTorch parity check; int8 is kept only if it agrees.
-- ~100 pytest tests (synthetic data; no private data or model needed) + an end-to-end CLI smoke test.
+- ≈100 pytest tests (synthetic data; no private data or model needed) + an end-to-end CLI smoke test.
 - New documentation (`docs/`) and diagrams; the original design docs are archived in `docs/archive/original/`.
 
 ## 0.1.0 — 2026-06 / 2026-07 · Original prototype
