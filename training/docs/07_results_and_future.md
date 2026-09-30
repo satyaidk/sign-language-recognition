@@ -61,11 +61,15 @@ candidates for more data or richer features.
   across classes.
 
 ### Inference / product
-- **Continuous segmentation.** The live loop classifies fixed chunks; a proper
-  sequence segmenter (or CTC-style decoding) would handle sign boundaries instead
-  of a sliding window.
-- **Streaming model.** A causal/streaming variant would cut the chunk latency of
-  the record→process→delete loop.
+- **Continuous segmentation.** *Done (first pass):* the live loop is now
+  **motion-gated** (`segmenter.py`) — it records one sign at a time between
+  stillness boundaries instead of fixed chunks. A learned sequence segmenter (or
+  CTC-style decoding) would still handle back-to-back signs with no pause.
+- **Hand-velocity gating.** The current motion signal is whole-frame
+  frame-difference; gating on hand-landmark velocity would ignore head/body
+  motion and tighten the boundaries.
+- **Streaming model.** A causal/streaming variant would cut the per-segment
+  latency of the record→process→delete loop.
 - **On-device export.** The int8 ONNX is already CPU-friendly; ORT-Mobile / WebGPU
   would extend this to phones / browsers.
 

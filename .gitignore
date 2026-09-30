@@ -71,9 +71,9 @@ tmp/
 
 # ============================================================================
 #  KEPT IN GIT (for reference — these are NOT ignored):
-#    *.py                          all pipeline + training code
+#    *.py                          all pipeline + training code (incl. segmenter.py)
 #    docs/*.md  docs/diagrams/*.png  docs/*.py  docs/TECHNICAL_DOCUMENTATION.pdf
 #    training/docs/*.md  training/docs/diagrams/*.png  training/docs/*.py
-#    training/docs/TRAINING_DOCUMENTATION.pdf
+#    training/docs/TRAINING_DOCUMENTATION.pdf  training/docs/LIVE_SEGMENTATION_FIX.pdf
 #    .gitignore
 # ============================================================================

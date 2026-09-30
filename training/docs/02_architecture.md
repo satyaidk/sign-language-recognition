@@ -55,7 +55,8 @@ two code paths — they are the same path with augmentation toggled on/off.
 | `export_optimize.py` | Stage 3: ONNX export + int8 + parity check + latency. | torch, onnxruntime |
 | `predictor.py` | Load `model_meta.json`, run ONNX/torch, landmarks → sign. | features, onnxruntime |
 | `infer_video.py` | Stage 4: file inference + prediction overlay video. | predictor, extract_dataset |
-| `infer_live.py` | Stage 5: chunked record→process→delete live loop. | predictor, OpenCV |
+| `infer_live.py` | Stage 5: **motion-gated** record→process→delete live loop. | predictor, segmenter, OpenCV |
+| `segmenter.py` | Live: motion-gated sign segmentation + repeat de-duplication. | NumPy, OpenCV |
 
 ## Design principles
 

@@ -23,7 +23,7 @@ The pipeline is deliberately split into numbered, runnable stages:
 | 2 | `finetune.py` | Fit the **deployment model on 100%** of the data (EMA weights) | `checkpoints/model_final.pt` |
 | 3 | `export_optimize.py` | Export to **ONNX** + int8, verify parity, measure latency | `exported/sign_model.onnx` |
 | 4 | `infer_video.py` | Run the model on a **video file**, render a prediction overlay | `predictions/*_pred.mp4` |
-| 5 | `infer_live.py` | **Live** webcam translation (record → process → delete chunks) | `predictions/live_transcript.json` |
+| 5 | `infer_live.py` | **Live** webcam translation (**motion-gated** record → process → delete) | `predictions/live_transcript.json` |
 
 Stages 1–3 are offline (training). Stages 4–5 are inference and share one
 `SignPredictor` so the serving path is identical everywhere.
@@ -76,9 +76,10 @@ training/
 ├── train.py             # STAGE 1 — k-fold cross-validation
 ├── finetune.py          # STAGE 2 — fit final model on all data (EMA)
 ├── export_optimize.py   # STAGE 3 — export + optimize to ONNX
-├── predictor.py         # shared inference: load model, landmarks -> sign
+├── predictor.py         # shared inference: load model, landmarks -> sign (+ robust voting)
 ├── infer_video.py       # STAGE 4 — run on a video file + overlay
-├── infer_live.py        # STAGE 5 — live webcam translation
+├── infer_live.py        # STAGE 5 — live webcam translation (motion-gated)
+├── segmenter.py         # live: motion-gated sign segmentation + repeat de-dup
 │
 ├── artifacts/           # ALL outputs (gitignored, regenerable)
 │   ├── checkpoints/     #   fold{k}.pt, model_final.pt, model_meta.json
@@ -86,7 +87,7 @@ training/
 │   ├── exported/        #   sign_model.onnx, sign_model.int8.onnx, model_meta.json
 │   ├── predictions/     #   *_pred.mp4 / *_pred.json, live_transcript.json
 │   ├── cache/           #   feature cache
-│   ├── live_tmp/        #   transient live recordings (auto-deleted)
+│   ├── live_tmp/        #   transient live sign segments (auto-deleted)
 │   └── logs/            #   train.log, finetune.log
 │
 └── docs/                # THIS DOCUMENTATION

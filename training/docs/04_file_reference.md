@@ -166,13 +166,23 @@ Used by **both** inference CLIs so the serving path is identical.
 
 ---
 
-## `infer_live.py` — STAGE 5: live translation (~236 lines)
+## `infer_live.py` — STAGE 5: live translation (motion-gated)
 
 | Symbol | Role |
 |--------|------|
-| `_banner(frame, lines)` | Live subtitle overlay. |
-| `process_chunk(tmp_path, ...)` | Run extractor+model on a temp clip, gate on confidence + hands-seen, then **delete** the temp. |
-| `run_webcam(args, predictor)` | Record→process→delete loop with live preview (Q to quit). |
-| `run_source(args, predictor)` | Same loop simulated from a video file (no camera needed). |
-| `_save_transcript(...)` | Write `live_transcript.json`; clean up any leftover temp chunks. |
-| `main` / `parse_args` | `--seconds --source --device-index --proc-width --backend --int8 --conf --no-display --keep-temp`. |
+| `_overlay(disp, ev, ...)` | State-aware overlay: **LISTENING** vs **● REC** + motion bar, flashes a recognised sign, draws the transcript. |
+| `process_segment(frames, ...)` | Write one motion-gated segment to a temp clip, run extractor + `predict_robust`, gate on confidence + margin + hands-seen, then **delete** the temp. |
+| `_emit(out, ...)` | Apply the de-dup gate and append to the transcript. |
+| `run_webcam(args, predictor)` | Motion-gated record→process→delete loop with live preview (Q to quit). |
+| `run_source(args, predictor)` | Same loop simulated from a video file (no camera needed); whole-clip fallback if no segment triggers. |
+| `_save_transcript(...)` | Write `live_transcript.json`; clean up any leftover temp segments. |
+| `main` / `parse_args` | `--source --device-index --proc-width --backend --int8 --no-display --keep-temp` plus gating (`--conf --margin --repeat-window --no-dedup`) and motion (`--motion-start --motion-stop --floor --still --min-sign --max-sign --preroll`). |
+
+## `segmenter.py` — live sign segmentation + de-duplication
+
+| Symbol | Role |
+|--------|------|
+| `MotionSegmenter` | Frame-difference motion energy + a hysteresis state machine (auto-calibrated noise floor, pre-roll, still-hold end detection, min/max duration). `feed(frame)` → `SegEvent`; emits the segment frames once a sign closes. |
+| `SignDebouncer` | Suppress an immediately-repeated sign within a time window (`accept(name, t) → bool`). |
+| `SegEvent` | Per-frame report: `state`, `motion`, `level`, `started`, `segment`, `reason`. |
+| `__main__` | Self-test on a synthetic motion trace (no camera): asserts 2 onsets / 2 segments and the de-dup behaviour. |
