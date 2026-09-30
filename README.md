@@ -600,9 +600,3 @@ with one output head per language.
 - [PyTorch](https://pytorch.org/) and [ONNX Runtime](https://onnxruntime.ai/).
 
 ---
-
-<div align="center">
-
-Built by **Satyanarayana Nikadi** · Python · MediaPipe · OpenCV · NumPy · PyTorch · ONNX Runtime
-
-</div>
