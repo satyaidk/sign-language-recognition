@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# tests
+pytest==9.1.1
+
+# rebuilding the PDF documentation in docs/ (optional)
+reportlab==5.0.0

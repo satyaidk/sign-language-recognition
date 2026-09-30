@@ -1,0 +1,20 @@
+# Runtime dependencies — exact versions verified together on Python 3.11 / Windows 11.
+#   python -m venv .venv && .venv\Scripts\activate && pip install -r requirements.txt
+
+# MediaPipe 0.10.9 is REQUIRED: the project uses the legacy `mp.solutions` API
+# (FaceMesh / Hands / Pose), which Google removed from mediapipe >= 0.10.31.
+mediapipe==0.10.9
+protobuf==3.20.3
+
+# MediaPipe depends on the *contrib* OpenCV build. Do not also install
+# `opencv-python` — both provide the `cv2` module and conflict.
+opencv-contrib-python==4.13.0.92
+
+numpy==2.4.4
+matplotlib==3.10.8
+
+# CPU is enough (training takes minutes on a laptop). The PyPI wheel on Windows is
+# CPU-only; for other platforms: pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0
+onnx==1.21.0
+onnxruntime==1.24.4
