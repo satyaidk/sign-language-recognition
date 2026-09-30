@@ -68,11 +68,11 @@ torch 2.11 (CPU), onnxruntime 1.24, mediapipe 0.10.9.
 
 | Measurement | Result | How |
 |-------------|--------|-----|
-| Test suite | all passing, ~20 s | `python -m pytest -q` |
+| Test suite | all passing, ≈20 s | `python -m pytest -q` |
 | End-to-end CLI smoke test (extract → verify → report → prune → observe → train → finetune → export → video → live) | all stages pass | synthetic videos + synthetic landmark dataset |
-| Model latency (ONNX, 1 clip, CPU) | ~1.1–1.2 ms | `export` |
-| Feature transform | ~1.4 ms per clip (T = 90) | timed |
-| Streaming landmark extraction (720p frames → 480 px, persistent models) | ~25 ms per frame (~40 fps) | timed on synthetic frames |
-| Live classification after a sign ends | **~2 ms** (was ~2.5 s of frozen preview for a 2 s sign) | session log `classify_ms` |
+| Model latency (ONNX, 1 clip, CPU) | ≈1.1–1.2 ms | `export` |
+| Feature transform | ≈1.4 ms per clip (T = 90) | timed |
+| Streaming landmark extraction (720p frames → 480 px, persistent models) | ≈25 ms per frame (≈40 fps) | timed on synthetic frames |
+| Live classification after a sign ends | **≈2 ms** (was ≈2.5 s of frozen preview for a 2 s sign) | session log `classify_ms` |
 | Synthetic 3-class dataset (end-to-end test) | ≥ 0.9 out-of-fold accuracy; ONNX parity < 1e-3; ONNX and PyTorch agree | `tests/test_pipeline.py` |
-| Int8 ONNX | ~6% smaller, ~10% faster (GRU layers are not quantised) | `export` |
+| Int8 ONNX | ≈6% smaller, ≈10% faster (GRU layers are not quantised) | `export` |

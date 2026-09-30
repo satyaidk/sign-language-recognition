@@ -46,7 +46,7 @@ The root cause was **segmentation**: classifying on a clock instead of on the si
 Iteration 2 still had a structural flaw. When a segment closed, the loop:
 1. wrote the frames to a temporary MP4;
 2. re-opened it and created **three new MediaPipe models**;
-3. re-extracted every frame (~40 ms per frame on the reference laptop).
+3. re-extracted every frame (≈40 ms per frame on the reference laptop).
 
 That all ran **on the capture thread**, so a 2 s sign froze the preview for about
 2.5 s, and any sign made during the freeze was lost.
@@ -58,12 +58,12 @@ memory, and only the model runs.
 
 | | Iteration 2 | Iteration 3 |
 |---|---|---|
-| Work after a sign ends | re-encode + re-extract every frame (~40 ms/frame) + model | model only (**~2 ms** measured) |
+| Work after a sign ends | re-encode + re-extract every frame (≈40 ms/frame) + model | model only (**≈2 ms** measured) |
 | Preview during classification | frozen | keeps running |
 | MediaPipe models per sign | 3 created and destroyed | 0 (persistent) |
 | Temp files | one MP4 per sign | none |
 | Face mesh | always run, then ignored by the model | skipped when the model doesn't use the face |
-| Per-frame landmark cost (720p→480 px, synthetic frames) | n/a | **~25 ms (~40 fps)** |
+| Per-frame landmark cost (720p→480 px, synthetic frames) | n/a | **≈25 ms (≈40 fps)** |
 
 Other fixes in the same pass:
 - **Wrong abstain reason.** The old code printed "tie" for any confidence ≥ 0.5, even

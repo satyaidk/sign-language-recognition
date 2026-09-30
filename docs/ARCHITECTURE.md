@@ -71,9 +71,9 @@ signlang/
 | **One shared feature transform** | Training and serving call the same `to_features`; the transform has no fitted state, so the model's meta fully describes it. |
 | **Per-clip normalisation** (mid-shoulder origin, median shoulder width) | Position- and scale-invariant; robust to per-frame dropouts; absent hands are re-zeroed so they never become "ghost hands". |
 | **Face off by default** | Face is 1,434 of 1,692 raw values; the 12-sign vocabulary is manual (hand-driven). It's one flag (`--use-face`) to include it. |
-| **Small BiGRU + attention pooling (~0.54 M params)** | Right-sized for tiny data; heavy regularisation (dropout, label smoothing, augmentation, EMA). |
-| **k-fold CV for evaluation, separate 100% fit for deployment** | With ~11 clips per class a single split is noise; out-of-fold predictions score every clip once. |
-| **ONNX Runtime on CPU** | Framework-free deployment, ~1 ms per classification. |
+| **Small BiGRU + attention pooling (≈0.54 M params)** | Right-sized for tiny data; heavy regularisation (dropout, label smoothing, augmentation, EMA). |
+| **k-fold CV for evaluation, separate 100% fit for deployment** | With ≈11 clips per class a single split is noise; out-of-fold predictions score every clip once. |
+| **ONNX Runtime on CPU** | Framework-free deployment, ≈1 ms per classification. |
 | **Motion-gated segmentation + abstain + de-dup** | Fixed windows cut signs in half and kept emitting stale words (see [LIVE_RECOGNITION.md](LIVE_RECOGNITION.md)). |
 | **Streaming landmark extraction in live mode** | Nothing is re-processed after a sign ends, so there is no freeze and no temp files. |
 | **Pure logic separated from I/O** | Smoothing, hand logic, QA, folds, metrics, segmenter and gates are unit-tested without a camera, MediaPipe or data. |
